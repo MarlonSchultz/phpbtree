@@ -23,7 +23,7 @@ Algorithm Inorder(tree)
 d) Echo the tree in preorder: Use brackets around each tree. example from index.php would be : [10[5[3]][15]]
 
 e) Echo the tree in preorder using a char to illustrate the depth.
-    ie:
+    ie:  
     10  
     _5  
     __3  
@@ -39,7 +39,7 @@ ie: startingvalue 7:
 _4  
 __2  
 ___1  
-___1
+___1  
 __2  
 ___1  
 ___1  
