@@ -1,0 +1,19 @@
+{
+  "name": "root/php",
+  "description": "Btree Recursion Katas",
+  "require": {
+    "phpunit/phpunit": "^6.0",
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "mgbs\\": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "Marlon Schultz",
+      "email": "spam@marlonschultz.de"
+    }
+  ]
+}
