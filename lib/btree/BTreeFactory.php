@@ -11,7 +11,6 @@ namespace mgbs\lib\btree;
 /**
  * Builds a Btree recursively
  * Adds values to the correct node
- * Does not add values twice
  *
  * Class BTreeFactory
  * @package mgbs\lib\btree
