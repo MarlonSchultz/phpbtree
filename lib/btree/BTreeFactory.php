@@ -52,7 +52,7 @@ class BTreeFactory
             $this->addLeftNode($root, $newValue);
         }
 
-        if ($root->getValue() < $newValue) {
+        if ($root->getValue() <= $newValue) {
             $this->addRightNode($root, $newValue);
         }
     }

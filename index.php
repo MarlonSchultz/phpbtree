@@ -8,6 +8,7 @@
 
 
 use mgbs\lib\btree\BTreeFactory;
+use mgbs\task1\task1;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -22,10 +23,5 @@ $btreeFactory = new BTreeFactory();
  */
 $btree = $btreeFactory->buildTreeWithChildren([10, 5, 3, 15]);
 
-// is 5
-echo $btree->getLeft()->getValue() . PHP_EOL;
-// is 3
-echo $btree->getLeft()->getLeft()->getValue() . PHP_EOL;
-// is 15
-echo $btree->getRight()->getValue() . PHP_EOL;
-
+$task1 = new task1();
+echo $task1->countNumberOfNodes($btree);
