@@ -14,17 +14,17 @@ use mgbs\lib\btree\BTree;
 class task1
 {
     // without type hinting this would acutally be a little easier, since oyu could discard the if checks
-    public function countNumberOfNodes(BTree $bTree): int
+    public function getCountOfNodes(BTree $bTree): int
     {
         $left = 0;
         $right = 0;
 
         if (is_a($bTree->getLeft(), BTree::class)) {
-            $left = $this->countNumberOfNodes($bTree->getLeft());
+            $left = $this->getCountOfNodes($bTree->getLeft());
         }
 
         if (is_a($bTree->getRight(), BTree::class)) {
-            $right = $this->countNumberOfNodes($bTree->getRight());
+            $right = $this->getCountOfNodes($bTree->getRight());
         }
         return 1 + $left + $right;
     }

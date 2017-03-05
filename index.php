@@ -24,4 +24,4 @@ $btreeFactory = new BTreeFactory();
 $btree = $btreeFactory->buildTreeWithChildren([10, 5, 3, 15]);
 
 $task1 = new task1();
-echo $task1->countNumberOfNodes($btree);
+echo $task1->getCountOfNodes($btree);
