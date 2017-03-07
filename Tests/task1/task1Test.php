@@ -27,7 +27,7 @@ class task1Test extends Testcase
     {
         $bTreeFactory = new BTreeFactory();
         $treeWith4Nodes = $bTreeFactory->buildTreeWithChildren([1, 2, 3, 4]);
-        $treeWith10Nodes = $bTreeFactory->buildTreeWithChildren([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+        $treeWith10Nodes = $bTreeFactory->buildTreeWithChildren([10,9,8,7,6,5,4,3,2,1]);
 
         self::assertEquals(4, $this->task1->getCountOfNodes($treeWith4Nodes));
         self::assertEquals(10, $this->task1->getCountOfNodes($treeWith10Nodes));
